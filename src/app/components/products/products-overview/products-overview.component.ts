@@ -18,6 +18,13 @@ export class ProductsOverviewComponent implements OnInit {
   ngOnInit(): void {
     //! Intervalo infinito
     // interval().pipe(takeUntil(this._unsubscribe)).subscribe(number => console.log(number));
+
+    this.productService.getAllProducts().pipe(takeUntil(this._unsubscribe)).subscribe(
+      (allProducts: any) =>  {
+        this.products = allProducts;
+        console.log(allProducts);
+      }
+    )
   }
 
 }
