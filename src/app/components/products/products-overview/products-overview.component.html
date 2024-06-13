@@ -1,0 +1,6 @@
+<!-- <p>products-overview works!</p> -->
+<div class="container">
+    <div *ngIf="products.length > 0" class="products-list">
+        <div class="product-card" *ngFor="let product of products" [routerLink]="product.id">{{product.title}}</div>
+    </div>
+</div>

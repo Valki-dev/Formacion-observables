@@ -1,0 +1,12 @@
+#header-container {
+    /* border: 1px solid red; */
+    display: flex;
+    background: #51597A;
+    padding: 20px;
+}
+
+.header-title {
+    font-family: monospace;
+    color: white;
+    font-size: xxx-large;
+}

@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    width: 100%;
+    /* border: 1px solid green; */
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.products-list {
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 80%;
+}
+
+.product-card {
+    /* border: 1px solid red; */
+    background: #056D93;
+    width: 23%;
+}
